@@ -1,0 +1,23 @@
+nav{
+    background-color: #2d2d2e;
+    height: 100%;
+
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+
+        li{
+
+            a{
+                color: #fff;
+                padding: 20px;
+                display: block;
+            }
+
+            .acitivated{
+                background-color: #00a8ff;
+            }
+        }
+    }
+}
