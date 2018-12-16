@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-index',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  numbers: number[] = [];
+
+  constructor() { 
+    for (let i = 0; i < 10; i++){
+      this.numbers.push(i);
+    }
+  }
 
   ngOnInit() {
+  }
+
+  drop(event: CdkDragDrop<number[]>){
+    console.log(this.numbers, event.previousIndex, event.currentIndex);
+    moveItemInArray(this.numbers, event.previousIndex, event.currentIndex);
   }
 
 }

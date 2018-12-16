@@ -4,3 +4,9 @@
 <p>
   change stuff by clicking the icons on the left
 </p>
+
+<div cdkDropList (cdkDropListDropped)="drop($event)" class="numbers">
+  <div cdkDrag *ngFor="let number of numbers" class="item">
+      {{ number }}
+  </div>
+</div>

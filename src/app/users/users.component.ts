@@ -16,7 +16,7 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
           animate('500ms ease-out',
           style({ opacity: 1, transform: 'translateY(0px)' }))),
         ], {optional: true}),
-        query(':leave', animate('50ms', style({ opacity: 0})),
+        query(':leave', animate('0ms', style({ opacity: 0})),
           {optional: true})
       ])
     ])

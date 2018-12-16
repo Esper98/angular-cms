@@ -10,8 +10,9 @@ import { DetailsComponent } from './details/details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { HttpClientModule } from '@angular/common/http';
-import { IndexComponent } from './index/index.component'
+import { IndexComponent } from './index/index.component';
 
+import { DragDropModule } from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { IndexComponent } from './index/index.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
